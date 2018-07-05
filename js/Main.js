@@ -1,16 +1,33 @@
 let click = document.querySelector('#click'),
- upper = document.querySelector('#upper'),
- pokeball = document.querySelector('#Main-start-cont');
+    upper = document.querySelector('#upper'),
+    pokeball = document.querySelector('#pokeball');
 
- const timeRotate = `2s`;
 
-click.addEventListener("click",() => {
+const timeRotate = `2s`,
+TimeRotateMs = 2000,
+
+click.addEventListener("click", () => {
         upper.style.background = 'Gold';
         upper.style.transition = timeRotate;
         pokeball.style.transform = `rotate(450deg)`;
         pokeball.style.transition = timeRotate;
-        (()=>console.log(2))
+
+
+
+        AfterClikOnPokeball();
     }
 
 );
+
+let AfterClikOnPokeball = function () {
+    
+    setTimeout(
+        () => {
+            click.style.opacity = 0.0;
+            click.style.transition = timeRotate;
+        }, TimeRotateMs/3
+    )
+    
+    
+};
 
