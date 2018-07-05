@@ -10,14 +10,14 @@ body {
     overflow: hidden;
 }
 
-#Main-start-cont {
+#pokeball {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50vh;
-    height: 50vh;
+    width: 60vh;
+    height: 60vh;
     margin: auto;
     overflow: hidden;
     border: 1px solid rgb(8, 8, 6);
