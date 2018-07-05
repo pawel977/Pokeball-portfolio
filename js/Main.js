@@ -5,37 +5,33 @@ const
     click = document.querySelector('#click'),
     lower = document.querySelector('#lower'),
     pokeball = document.querySelector('#pokeball'),
-    startButtons = document.querySelectorAll('.buttonsStart'),
-
 
 
     divMe = document.createElement("div"),
-    divAbout = document.createElement("div"),
-    divPortfolio = document.createElement("div"),
-    divCv = document.createElement("div");
+
+    butAbout = document.createElement("button"),
+    butPortfolio = document.createElement("button"),
+    butCv = document.createElement("button");
 
 
-divMe.setAttribute('id', 'zdj');
+divMe.setAttribute('id', 'divMe');
 
-divAbout.setAttribute('id', 'about');
-divPortfolio.setAttribute('id', 'portfolio');
-divCv.setAttribute('id', 'Cv');
+butAbout.setAttribute('id', 'about');
+butPortfolio.setAttribute('id', 'portfolio');
+butCv.setAttribute('id', 'cv');
 
-divAbout.setAttribute("class", "buttonsStart");
-divPortfolio.setAttribute("class", "buttonsStart");
-divCv.setAttribute("class", "buttonsStart");
+butAbout.setAttribute("class", "buttonsStart");
+butPortfolio.setAttribute("class", "buttonsStart");
+butCv.setAttribute("class", "buttonsStart");
 
-getDivAbout = document.createElement("div");
-getDivPortfolio = document.createElement("div");
-getDivCv = document.createElement("div");
-getDivMe = document.querySelector("#zdj");
+
 
 
 upper.appendChild(divMe);
 
-lower.appendChild(divAbout);
-lower.appendChild(divPortfolio);
-lower.appendChild(divCv);
+lower.appendChild(butAbout);
+lower.appendChild(butPortfolio);
+lower.appendChild(butCv);
 
 click.addEventListener("click", () => {
         upper.style.background = 'Gold';
@@ -55,14 +51,82 @@ let AfterClikOnPokeball = function () {
             pokeball.style.transform = `scale(1.5)`;
             click.style.opacity = 0.0;
             click.style.transition = timeRotate;
-            startButtons.style.display = 'flex';
-            startButtons.style.opacity = '1';
 
 
         }, TimeRotateMs / 3
+
     );
-    click.style.display = "hidden";
+    setTimeout(() => {
+        divMe.style.display = `flex`;
+        divMe.style.opacity = `0.1`;
+        divMe.style.backgroundcolor = "red";
+
+        setTimeout(()=>{
+            divMe.style.transition = ` 2s`;
+            divMe.style.opacity = `1`;
+            
+            setTimeout(()=>{
+              //  divMe.style.backgroundcolor = "blank";
+            },1000);
+        },500);
+    }, 1000);
+
+    setTimeout(() => {
 
 
+        butAbout.style.display = 'inline-block';
+        butAbout.style.opacity = `0.9`;
+        butAbout.style.transition = `2s`;
+    }, 2500);
+
+    setTimeout(() => {
+        butPortfolio.style.display = 'inline-block';
+        butPortfolio.style.opacity = `0.9`;
+        butPortfolio.style.transition = `2s`;
+    }, 3000);
+
+    setTimeout(() => {
+        butCv.style.display = 'inline-block';
+        butCv.style.opacity = `0.9`;
+        butCv.style.transition = `2s`;
+        click.style.display = "none";
+    }, 3500);
+
+
+    click.style.opacity = "0.0";
+    click.style.transition = "2s";
+
+
+    ////////////button about///////////////////
+    setTimeout(() => {
+        butAbout.addEventListener('click', () => {
+            const
+                pageAbout = document.createElement("div"),
+                headPageAbout = document.createElement('div');
+
+            pageAbout.setAttribute('id', 'pageAbout');
+            headPageAbout.setAttribute('id', 'headPageAbout');
+
+            document.body.appendChild(headPageAbout);
+            document.body.appendChild(pageAbout);
+
+            pokeball.style.opacity = '0';
+            pokeball.style.transition = timeRotate;
+
+            setTimeout(() => {
+                headPageAbout.style.display = `block`;
+                pageAbout.style.display = `block`;
+
+                headPageAbout.style.opacity = "0.9";
+                headPageAbout.style.transition = timeRotate;
+
+
+
+
+            }, 1000);
+
+        }, 5000);
+
+    });
 
 };
