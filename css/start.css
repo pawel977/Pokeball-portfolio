@@ -6,10 +6,6 @@
 
 body {
     background-image: url(../img/bcmainimg.jpg);
-    background-position: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    margin: auto 0;
 }
 
 #pokeball {
