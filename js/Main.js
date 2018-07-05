@@ -86,20 +86,20 @@ let AfterClikOnPokeball = function () {
         butAbout.style.display = 'inline-block';
         butAbout.style.opacity = `0.9`;
         butAbout.style.transition = `2s`;
-    }, 2000);
+    }, 1700);
 
     setTimeout(() => {
         butPortfolio.style.display = 'inline-block';
         butPortfolio.style.opacity = `0.9`;
         butPortfolio.style.transition = `2s`;
-    }, 2200);
+    }, 1800);
 
     setTimeout(() => {
         butCv.style.display = 'inline-block';
         butCv.style.opacity = `0.9`;
         butCv.style.transition = `2s`;
         click.style.display = "none";
-    }, 2800);
+    }, 1900);
 
 
     click.style.opacity = "0.0";
