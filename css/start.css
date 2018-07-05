@@ -30,7 +30,9 @@ body {
     opacity: 0.8;
     width: 100%;
     height: 50%;
-    border-bottom: 5px solid black;
+    border-bottom: 10px solid black;
+    display: flex;
+    align-items: center;
 }
 
 #click {
@@ -52,8 +54,32 @@ body {
 }
 
 #lower {
-    border-top: 5px solid black;
+    border-top: 10px solid black;
     width: 100%;
     height: 50%;
     background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+#zdj{
+height: 25vh;
+width: 25vh;
+border-radius: 50%;
+border: 5px solid black;
+background: blue;
+position: relative;
+margin:  auto;
+display: none;
+}
+
+.buttonsStart{
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: auto;
+    transform: translateY(-30%);
+    display: hidden;
+    opacity: 0;
 }
