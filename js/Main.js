@@ -5,7 +5,12 @@ const
     click = document.querySelector('#click'),
     lower = document.querySelector('#lower'),
     pokeball = document.querySelector('#pokeball'),
-
+    
+    refresh = function(){
+        butRefresh.addEventListener('click', () => {
+            location.reload();
+        });
+    }
 
     divMe = document.createElement("div"),
 
@@ -136,7 +141,7 @@ let AfterClikOnPokeball = function () {
                 
                 Witam.</br>
                 <tab>Jestem młodym, studiującym <b>Junior Front-End Developerem</b>.</br>Aktualnie studiuję Informatykę na <b>Polsko-Japańskiej Akademii Technik komputerowych w Warszawie.</b></br>
-                Moja przygoda z progromwaniem zaczeła się pare lat temu kiedy zapisałem się do <b>Liceum PJATK w klasie o profilu informatycznym</b> gdzie zaczynałem swoją przygodę z językami backendowi.
+                Moja przygoda z progromwaniem zaczeła się parę lat temu kiedy zapisałem się do <b>Liceum PJATK w klasie o profilu informatycznym</b> gdzie zaczynałem swoją przygodę z językami backendowi.
                 Jednak swoja prawdziwą miłośc poznałem 2 lata temu, jest to <b>Front-End.</b></br></br>
                 
                 Rozwijam się w każdej chwili w tym kierunku, Moje umiejetności to:</br>
@@ -151,13 +156,8 @@ let AfterClikOnPokeball = function () {
                 Pozdrawiam</br>Paweł Sawicki.`;
 
                 headPageAbout.appendChild(butRefresh);
-
-                butRefresh.addEventListener('click', () => {
-                    location.reload();
-                });
-
-
-
+                
+                refresh()
             }, 1000);
 
         }, 5000);
@@ -178,7 +178,7 @@ let AfterClikOnPokeball = function () {
                 const allCanv = document.createElement('canvas');
                 allCanv.setAttribute('id', 'allCanv');
                 pageGame.appendChild(allCanv);
-                
+
 
                 pageGame.appendChild(butRefresh);
                 const ctx = allCanv.getContext(`2d`);
@@ -369,24 +369,38 @@ let AfterClikOnPokeball = function () {
 
 
 
-
-
-
-
-
-
-
-
-
+                refresh()
 
 
             }, 2300);
 
-            butRefresh.addEventListener('click', () => {
-                location.reload();
-            });
-        });
 
+        });
+        ///////////kontakt/////////
+
+        butCv.addEventListener('click', () => {
+            pokeball.style.opacity = '0';
+            pokeball.style.transition = timeRotate;
+
+            setTimeout(() => {
+                pokeball.style.display = 'none';
+                const pageKon = document.createElement(`div`);
+                pageKon.setAttribute('id', 'pageKon');
+                document.body.appendChild(pageKon);
+                setTimeout(()=>{
+                    const pageInnerKon = document.createElement('div');
+                    pageInnerKon.setAttribute('id','pageInnerKon');
+                    pageKon.appendChild(pageInnerKon);
+                    pageKon.appendChild(butRefresh);
+                    pageInnerKon.innerHTML = `<b>Paweł Sawicki</b></br>linki:</br>
+                    Github</br><a>https://github.com/pawel977</a></br>
+                    Linkedin</br><a>https://www.linkedin.com/in/pawe%C5%82-sawicki-737a15160/</a></br>
+                    E-mail</br>
+                    psawicki97@gmial.com`;
+                    refresh();
+                }, 1000);
+            },2000);
+        });
 
     }, 1000);
 
