@@ -8,6 +8,7 @@ body {
     background-image: url(../img/bcmainimg.jpg);
     background-position: fixed;
     overflow: hidden;
+    background-size: cover;
 }
 
 #pokeball {
