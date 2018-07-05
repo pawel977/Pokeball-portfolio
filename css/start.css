@@ -97,14 +97,26 @@ background-size: contain;
 
 }
 
+#about:hover {
+    background: rgba(8, 8, 8, 0.854);
+    transition: 1s;
+}
+
 #portfolio{
     background-image: url(../img/game.png);
 
 }
-
+#portfolio:hover {
+    background: rgba(8, 8, 8, 0.854);
+    transition: 1s;
+}
 #cv{
     background-size: 75%;
     background-image: url(../img/phone.png);
+}
+#cv:hover {
+    background: rgba(8, 8, 8, 0.854);
+    transition: 1s;
 }
 
 #headPageAbout{
