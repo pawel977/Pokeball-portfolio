@@ -6,9 +6,9 @@
 
 body {
     background-image: url(../img/bcmainimg.jpg);
-    background-position: fixed;
+    background-position: center;
     overflow: hidden;
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #pokeball {
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     border: 1px solid rgb(8, 8, 6);
     border-radius: 50%;
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 6px 6px 6px black;
 }
 
 #upper {
@@ -45,7 +45,7 @@ body {
     left: 0;
     right: 0;
     background-color: white;
-    border: 5px solid black;
+    border: 8px solid black;
     border-radius: 50%;
     margin: auto;
 }
@@ -87,6 +87,26 @@ background-size: contain;
     transform: translateY(-30%);
     display: none;
     opacity: 0;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#about{
+    background-image: url(../img/about_me.png);
+    
+
+}
+
+#portfolio{
+    background-image: url(../img/game.png);
+
+}
+
+#cv{
+    background-size: 75%;
+    background-image: url(../img/phone.png);
 }
 
 #headPageAbout{
@@ -97,11 +117,40 @@ background-size: contain;
     opacity: 0;
 }
 
+#back{
+    background-color: red;
+    height: 5vh;
+    width: 5vh;
+    margin:  0 auto;
+    transform: translateY(100%);
+}
+
 #pageAbout{
     width:80vh;
     height: 80vh;
     position: relative;
-    background: rgba(235, 235, 211, 0.979);
+    background: rgba(235, 235, 211, 0.966);
     margin: 0 auto;
     opacity: 0;
+    padding: 1vh 3vh 0vh;
+    font-size: 1.5em;
+}
+#pageGame{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+canvas {
+	background-color: blue;
+    border: solid 20px blue;
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+
 }
