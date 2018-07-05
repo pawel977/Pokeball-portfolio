@@ -7,6 +7,7 @@
 body {
     background-image: url(../img/bcmainimg.jpg);
     background-position: fixed;
+    overflow: hidden;
 }
 
 #Main-start-cont {
@@ -17,8 +18,8 @@ body {
     right: 0;
     width: 50vh;
     height: 50vh;
-    overflow: hidden;
     margin: auto;
+    overflow: hidden;
     border: 1px solid rgb(8, 8, 6);
     border-radius: 50%;
     box-shadow: 4px 4px 4px black;
@@ -44,16 +45,15 @@ body {
     border: 5px solid black;
     border-radius: 50%;
     margin: auto;
-    opacity: 1;
 }
 
 #click:hover {
-    background: rgba(8, 8, 8, 0.514);
+    background: rgba(8, 8, 8, 0.854);
 }
 
 #lower {
     border-top: 5px solid black;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-color: aliceblue;
 }
