@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
-    background-image: url(../img/bcmainimg.jpg);
+    background-image: url(../img/halftone-yellow.png);
     overflow: hidden;
+    background-repeat: repeat;
 }
 
 #pokeball {
@@ -22,11 +24,11 @@ body {
     border: 1px solid rgb(8, 8, 6);
     border-radius: 50%;
     box-shadow: 6px 6px 6px black;
+    opacity: 0.8;
 }
 
 #upper {
     background-color: red;
-    opacity: 0.8;
     width: 100%;
     height: 50%;
     border-bottom: 10px solid black;
@@ -67,13 +69,14 @@ height: 25vh;
 width: 25vh;
 border-radius: 50%;
 border: 5px solid black;
-background: blue;
+background: black;
 position: relative;
 margin:  auto;
 display: none;
 opacity: 0.0;
 background-image: url(../img/mjZdj.png);
-background-size: contain;
+background-size: cover;
+background-position-x: -2vh;
 }
 
 .buttonsStart{
@@ -120,6 +123,9 @@ background-size: contain;
 }
 
 #headPageAbout{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 20vh;
     background: rgba(61, 212, 61, 0.774);
@@ -136,6 +142,8 @@ background-size: contain;
 }
 
 #pageAbout{
+    
+
     width:80vh;
     height: 80vh;
     position: relative;

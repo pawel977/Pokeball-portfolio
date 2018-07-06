@@ -34,8 +34,6 @@ butCv.setAttribute("class", "buttonsStart");
 butRefresh.setAttribute('id', 'back');
 
 
-
-
 upper.appendChild(divMe);
 
 lower.appendChild(butAbout);
@@ -107,6 +105,7 @@ let AfterClikOnPokeball = function () {
 
 
     ////////////button about///////////////////
+
     setTimeout(() => {
         butAbout.addEventListener('click', () => {
             const
@@ -157,7 +156,7 @@ let AfterClikOnPokeball = function () {
 
                 headPageAbout.appendChild(butRefresh);
                 
-                refresh()
+                refresh();
             }, 1000);
 
         }, 5000);
@@ -393,8 +392,8 @@ let AfterClikOnPokeball = function () {
                     pageKon.appendChild(pageInnerKon);
                     pageKon.appendChild(butRefresh);
                     pageInnerKon.innerHTML = `<b>Paweł Sawicki</b></br>linki:</br>
-                    Github</br><a>https://github.com/pawel977</a></br>
-                    Linkedin</br><a>https://www.linkedin.com/in/pawe%C5%82-sawicki-737a15160/</a></br>
+                    Github</br><a>https://github.com/pawel977</a></br></br>
+                    Linkedin</br><a>https://www.linkedin.com/in/pawe%C5%82-sawicki-737a15160/</a></br></br>
                     E-mail</br>
                     psawicki97@gmial.com`;
                     refresh();
