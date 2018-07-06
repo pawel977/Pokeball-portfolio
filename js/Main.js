@@ -50,8 +50,8 @@ click.addEventListener("click", () => {
         AfterClikOnPokeball();
 
         setTimeout(() => {
-            //pokeball.style.transition = timeRotate;
-            // pokeball.style.boxShadow = '30px 30px 30px black';
+            pokeball.style.transition = timeRotate;
+             pokeball.style.boxShadow = '30px 30px 30px black';
         }, 2200);
     }
 
@@ -69,7 +69,7 @@ let AfterClikOnPokeball = function () {
         }, TimeRotateMs / 3
 
     );
-    
+
     setTimeout(() => {
         divMe.style.display = `flex`;
 
@@ -130,6 +130,7 @@ let AfterClikOnPokeball = function () {
             setTimeout(() => {
 
                 setTimeout(() => {
+                    pageAbout.style.overflow = `scroll`;
                     pokeball.style.display = 'none';
                 }, 1000);
 
@@ -393,6 +394,7 @@ let AfterClikOnPokeball = function () {
                 pageKon.setAttribute('id', 'pageKon');
                 document.body.appendChild(pageKon);
                 setTimeout(() => {
+                    
                     const pageInnerKon = document.createElement('div');
                     pageInnerKon.setAttribute('id', 'pageInnerKon');
                     pageKon.appendChild(pageInnerKon);
@@ -402,6 +404,7 @@ let AfterClikOnPokeball = function () {
                     Linkedin</br><a>https://www.linkedin.com/in/pawe%C5%82-sawicki-737a15160/</a></br></br>
                     E-mail</br>
                     psawicki97@gmial.com`;
+                    pageInnerKon.style.overflow = `auto`;
                     refresh();
                 }, 1000);
             }, 2000);
