@@ -5,14 +5,14 @@ const
     click = document.querySelector('#click'),
     lower = document.querySelector('#lower'),
     pokeball = document.querySelector('#pokeball'),
-    
-    refresh = function(){
+
+    refresh = function () {
         butRefresh.addEventListener('click', () => {
             location.reload();
         });
     }
 
-    divMe = document.createElement("div"),
+divMe = document.createElement("div"),
 
     butAbout = document.createElement("button"),
     butPortfolio = document.createElement("button"),
@@ -45,8 +45,14 @@ click.addEventListener("click", () => {
         upper.style.transition = timeRotate;
         pokeball.style.transform = `rotate(450deg)`;
         pokeball.style.transition = timeRotate;
+        pokeball.style.boxShadow = '0px 0px 0px white';
 
         AfterClikOnPokeball();
+
+        setTimeout(() => {
+            //pokeball.style.transition = timeRotate;
+            // pokeball.style.boxShadow = '30px 30px 30px black';
+        }, 2200);
     }
 
 );
@@ -63,18 +69,18 @@ let AfterClikOnPokeball = function () {
         }, TimeRotateMs / 3
 
     );
+    
     setTimeout(() => {
         divMe.style.display = `flex`;
-        divMe.style.opacity = `0.1`;
-        divMe.style.backgroundcolor = "red";
 
         setTimeout(() => {
             divMe.style.transition = `2s`;
             divMe.style.opacity = `1`;
 
-            setTimeout(() => {
-                //  divMe.style.backgroundcolor = "blank";
-            }, 1000);
+            pokeball.style.transition = timeRotate;
+            pokeball.style.boxShadow = '30px 30px 30px black';
+            divMe.style.display = `flex`;
+
         }, 500);
     }, 1000);
 
@@ -155,7 +161,7 @@ let AfterClikOnPokeball = function () {
                 Pozdrawiam</br>Paweł Sawicki.`;
 
                 headPageAbout.appendChild(butRefresh);
-                
+
                 refresh();
             }, 1000);
 
@@ -386,9 +392,9 @@ let AfterClikOnPokeball = function () {
                 const pageKon = document.createElement(`div`);
                 pageKon.setAttribute('id', 'pageKon');
                 document.body.appendChild(pageKon);
-                setTimeout(()=>{
+                setTimeout(() => {
                     const pageInnerKon = document.createElement('div');
-                    pageInnerKon.setAttribute('id','pageInnerKon');
+                    pageInnerKon.setAttribute('id', 'pageInnerKon');
                     pageKon.appendChild(pageInnerKon);
                     pageKon.appendChild(butRefresh);
                     pageInnerKon.innerHTML = `<b>Paweł Sawicki</b></br>linki:</br>
@@ -398,7 +404,7 @@ let AfterClikOnPokeball = function () {
                     psawicki97@gmial.com`;
                     refresh();
                 }, 1000);
-            },2000);
+            }, 2000);
         });
 
     }, 1000);
