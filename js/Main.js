@@ -14,11 +14,11 @@ const
 
 divMe = document.createElement("div"),
 
-    butAbout = document.createElement("button"),
-    butPortfolio = document.createElement("button"),
-    butCv = document.createElement("button");
+    butAbout = document.createElement("div"),
+    butPortfolio = document.createElement("div"),
+    butCv = document.createElement("div");
 
-butRefresh = document.createElement('button');
+butRefresh = document.createElement('div');
 
 
 divMe.setAttribute('id', 'divMe');
