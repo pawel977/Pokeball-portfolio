@@ -150,6 +150,7 @@ let AfterClikOnPokeball = function () {
                 Moja przygoda z programowaniem zaczeła się parę lat temu kiedy zapisałem się do <b>Liceum PJATK w klasie o profilu informatycznym</b> gdzie zaczynałem swoją przygodę z językami backendowi.
                 Jednak swoja prawdziwą miłośc poznałem 2 lata temu, jest to <b>Front-End.</b></br></br>
                 Moje umiejetności to:</br>
+                
                 -js(5/6)</br>
                 -HTML 5</br>
                 -css 3</br>
