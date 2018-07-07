@@ -147,7 +147,7 @@ let AfterClikOnPokeball = function () {
                 
                 Witam.</br>
                 <tab><b>Junior Front-End Developer</b>.</br>Aktualnie studiuję Informatykę na <b>Polsko-Japańskiej Akademii Technik komputerowych w Warszawie.</b></br>
-                Moja przygoda z progromwaniem zaczeła się parę lat temu kiedy zapisałem się do <b>Liceum PJATK w klasie o profilu informatycznym</b> gdzie zaczynałem swoją przygodę z językami backendowi.
+                Moja przygoda z programowaniem zaczeła się parę lat temu kiedy zapisałem się do <b>Liceum PJATK w klasie o profilu informatycznym</b> gdzie zaczynałem swoją przygodę z językami backendowi.
                 Jednak swoja prawdziwą miłośc poznałem 2 lata temu, jest to <b>Front-End.</b></br></br>
                 Moje umiejetności to:</br>
                 -js(5/6)</br>
