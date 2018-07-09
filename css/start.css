@@ -161,7 +161,6 @@ canvas {
 #pageInnerKon {
     text-align: center;
     border: 2px solid black;
-    border-radius: 30%;
     background-color: rgba(235, 235, 211, 0.966);
     font-size: 2em;
     padding-top: 3vh;
@@ -201,6 +200,7 @@ canvas {
     #pageInnerKon {
         width: 80vh;
         height: 80vh;
+        border-radius: 30%;
     }
 }
 
@@ -227,7 +227,9 @@ canvas {
     }
     #pageInnerKon {
         width: 100vw;
-        height: 100vw;
+        height: 90vh;
+        margin-top: 20px;
+        border-radius: 5%;
     }
     #back {
         height: 5vh;
