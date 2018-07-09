@@ -226,11 +226,10 @@ canvas {
         height: 80vh;
     }
     #pageInnerKon {
-        width: 80vw;
-        height: 80vw;
+        width: 100vw;
+        height: 100vw;
     }
     #back {
-    
         height: 5vh;
         width: 5vh;
     }
