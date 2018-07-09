@@ -17,8 +17,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 60vh;
-    height: 60vh;
     margin: auto;
     overflow: hidden;
     border: 1px solid rgb(8, 8, 6);
@@ -64,24 +62,20 @@ body {
     align-items: center;
 }
 
-#divMe{
-height: 25vh;
-width: 25vh;
-border-radius: 50%;
-border: 5px solid black;
-background: black;
-position: relative;
-margin:  auto;
-display: none;
-opacity: 0.0;
-background-image: url(../img/mjZdj.png);
-background-size: cover;
-background-position-x: -2vh;
+#divMe {
+    border-radius: 50%;
+    border: 5px solid black;
+    background: black;
+    position: relative;
+    margin: auto;
+    display: none;
+    opacity: 0.0;
+    background-image: url(../img/mjZdj.png);
+    background-size: cover;
+    background-position-x: -2vh;
 }
 
-.buttonsStart{
-    height: 11vh;
-    width: 11vh;
+.buttonsStart {
     border-radius: 50%;
     border: 5px solid black;
     margin: auto;
@@ -91,13 +85,10 @@ background-position-x: -2vh;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
-#about{
+#about {
     background-image: url(../img/about_me.png);
-    
-
 }
 
 #about:hover {
@@ -105,24 +96,26 @@ background-position-x: -2vh;
     transition: 200;
 }
 
-#portfolio{
+#portfolio {
     background-image: url(../img/game.png);
-
 }
+
 #portfolio:hover {
     background: rgba(8, 8, 8, 0.854);
     transition: 200;
 }
-#cv{
+
+#cv {
     background-size: 75%;
     background-image: url(../img/phone.png);
 }
+
 #cv:hover {
     background: rgba(8, 8, 8, 0.854);
     transition: 200;
 }
 
-#headPageAbout{
+#headPageAbout {
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -133,43 +126,30 @@ background-position-x: -2vh;
     opacity: 0;
 }
 
-#back{
-    background-color: red;
-    position: absolute;
-    top: 0;
-    height: 5vh;
-    width: 5vh;
-}
-
-#pageAbout{
-    
-
-    width:80vh;
-    height: 80vh;
+#pageAbout {
     position: relative;
     background: rgba(235, 235, 211, 0.966);
     margin: 0 auto;
     opacity: 0;
     padding: 1vh 3vh 0vh;
     font-size: 1.5em;
+    overflow: auto;
 }
-#pageGame{
+
+#pageGame {
     width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 canvas {
-	background-color: blue;
+    background-color: blue;
     border: solid 20px blue;
 }
 
-#pageKon{
+#pageKon {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -177,13 +157,81 @@ canvas {
     align-items: center;
     justify-content: center;
 }
-#pageInnerKon{
+
+#pageInnerKon {
     text-align: center;
-    width: 80vh;
-    height:80vh;
     border: 2px solid black;
     border-radius: 30%;
     background-color: rgba(235, 235, 211, 0.966);
     font-size: 2em;
     padding-top: 3vh;
+}
+
+#back {
+    background-color: red;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (orientation: landscape) {
+    #pokeball {
+        width: 60vh;
+        height: 60vh;
+    }
+    #click {
+        height: 9vh;
+        width: 9vh;
+    }
+    #divMe {
+        height: 25vh;
+        width: 25vh;
+    }
+    .buttonsStart {
+        height: 11vh;
+        width: 11vh;
+    }
+    #back {
+        width: 6vh;
+        height: 6vh;
+    }
+    #pageAbout {
+        width: 80vh;
+        height: 80vh;
+    }
+    #pageInnerKon {
+        width: 80vh;
+        height: 80vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #pokeball {
+        width: 60vw;
+        height: 60vw;
+    }
+    #click {
+        height: 9vw;
+        width: 9vw;
+    }
+    #divMe {
+        height: 25vw;
+        width: 25vw;
+    }
+    .buttonsStart {
+        height: 11vw;
+        width: 11vw;
+    }
+    #pageAbout {
+        width: 100vw;
+        height: 80vh;
+    }
+    #pageInnerKon {
+        width: 80vw;
+        height: 80vw;
+    }
+    #back {
+    
+        height: 5vh;
+        width: 5vh;
+    }
 }
